@@ -1,0 +1,6 @@
+<% @wepons.each do |wepon| %>
+  <h3> <%= wepon.name %> </h3>
+  <p> <%= wepon.current_power %> </p>
+  <span> <%= wepon.title %> </span> <br>
+  <%= link_to "Show", wepon_path( wepon.id ) %>
+<% end %>
